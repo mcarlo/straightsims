@@ -22,13 +22,15 @@ shinyUI(fluidPage(
 
     fluidRow(
       column(4,
-             h4("Most simulated outright wins (no ties)")),
+             h4("Most simulated outright wins"),
+             h5("These picks are more aggressive. If you care about season-long points, don't use these.")),
       column(4,
              p("Tactical picks for 2015, Week 1"),
-p("Straight picks, no confidence points)")
+p("Straight picks, (no confidence points)")
       ),
       column(4,
-             h4("Most simulated wins and ties"))
+             h4("Most simulated wins and ties"),
+             h5("These picks are less aggressive. If you care about season-long points, use these instead."))
              ),
     fluidRow(
       column(4,
