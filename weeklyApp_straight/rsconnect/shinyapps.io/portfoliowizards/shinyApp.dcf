@@ -1,0 +1,8 @@
+name: shinyApp
+account: portfoliowizards
+server: shinyapps.io
+bundleId: 259474
+url: https://portfoliowizards.shinyapps.io/shinyApp
+when: 1441594664.72501
+asMultiple: FALSE
+asStatic: FALSE

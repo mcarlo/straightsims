@@ -1,5 +1,5 @@
 rm(list = ls())
-setwd("D:/Documents/GitHub/straightsims")
+#setwd("D:/Documents/GitHub/straightsims")
 load("straightStart.Rdata")
 
 weekFile <- read.csv("D:/WTP/WEEK01_2015.csv", stringsAsFactors = F)# "2015week01straight.csv", stringsAsFactors = F)
