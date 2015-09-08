@@ -19,6 +19,9 @@ shinyUI(fluidPage(
                                              .myTablerow {background-color:#D9D9D9;}"))
             )
     ),
+  fluidRow(column(3, p("")),
+
+           column(9, "Updated 9/8/16 4:30p PDT")),
     tags$head(includeScript("google-analytics.js"))
 )
 

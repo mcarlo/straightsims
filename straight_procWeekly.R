@@ -91,15 +91,16 @@ setwd("D:/Documents/GitHub/straightsims")
 load("2015wk01.RData")
 
 # system.time(compTactics(firstList, 5))
+maxReps <- 20
+playersBest <- rep(firstList, maxReps)
 
-system.time(playersBest <- compTactics(firstList, 20))
+system.time(playersBest <- compTactics(firstList, maxReps))
+
+setwd("D:/Documents/GitHub/straightsims/weeklyApp_straight")
 
 save(weekFile, playersBest, file = "app2015wk01.RData")
 
 ###
-rm(list = ls())
-setwd("D:/Documents/GitHub/straightsims")
-load("app2015wk01.RData")
 
 
 # for (i in 1:19){#i = 4

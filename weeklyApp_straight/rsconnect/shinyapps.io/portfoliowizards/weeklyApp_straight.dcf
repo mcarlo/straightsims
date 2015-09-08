@@ -1,8 +1,8 @@
 name: weeklyApp_straight
 account: portfoliowizards
 server: shinyapps.io
-bundleId: 259924
+bundleId: 260802
 url: https://portfoliowizards.shinyapps.io/weeklyApp_straight
-when: 1441652564.99915
+when: 1441755180.9004
 asMultiple: FALSE
 asStatic: FALSE
