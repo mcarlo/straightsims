@@ -1,6 +1,6 @@
 #rm(list = ls())
-#setwd("D:/Documents/GitHub/straightsims") #setwd("~/GitHub/straightsims")
-load("app2015wk01.RData")
+#setwd("D:/Documents/GitHub/straightsims/weeklyApp_straight") #setwd("~/GitHub/straightsims")
+load("app2015wk01test13.RData")
 library(shiny); library(scales)
 require(googleVis)
 
