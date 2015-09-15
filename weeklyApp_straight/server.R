@@ -1,6 +1,6 @@
 #rm(list = ls())
 #setwd("D:/Documents/GitHub/straightsims/weeklyApp_straight") #setwd("~/GitHub/straightsims")
-load("app2015wk01test13.RData")
+load("app2015wk02.RData")
 library(shiny); library(scales)
 require(googleVis)
 
@@ -9,7 +9,7 @@ shinyServer(function(input, output) { # input <- data.frame(players = 35)
   sizeIndex <- reactive({input$players/5 * 2})
 
   results <- reactive({playersBest[[sizeIndex()]]})
-  
+
   # most <- renderTable({cbind(Game = weekFile$Game, Pick = results()$mostTeams)}, include.rownames=F)
 
   output$mostWins <- renderGvis({
@@ -17,9 +17,9 @@ shinyServer(function(input, output) { # input <- data.frame(players = 35)
     most.W <- gvisTable(most, #include.rownames=F,
                       options=list(page='enable', #height=500, width = 300,
                                    showRowNumber = F, pageSize = 16,
-                                   cssClassNames = "{headerRow: 'myTableHeadrow', 
-                                   tableRow: 'myTablerow'}", 
-                                   alternatingRowStyle = TRUE, page = 'disable'), 
+                                   cssClassNames = "{headerRow: 'myTableHeadrow',
+                                   tableRow: 'myTablerow'}",
+                                   alternatingRowStyle = TRUE, page = 'disable'),
                       chartid = "mytable")
     most.W
   })
