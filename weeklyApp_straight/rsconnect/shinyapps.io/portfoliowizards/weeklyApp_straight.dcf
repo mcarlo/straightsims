@@ -1,8 +1,8 @@
 name: weeklyApp_straight
 account: portfoliowizards
 server: shinyapps.io
-bundleId: 267655
+bundleId: 299286
 url: https://winthatpool.shinyapps.io/weeklyApp_straight
-when: 1442504453.40005
+when: 1445985927.24367
 asMultiple: FALSE
 asStatic: FALSE

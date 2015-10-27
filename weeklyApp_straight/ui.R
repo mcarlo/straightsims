@@ -11,8 +11,8 @@ shinyUI(fluidPage(
            h6("Appropriate for straight-up pick'em pools with a weekly payout"),
            sliderInput("players", "   Number of Players in Pool:", min = 5,
                        max = 100, step = 5, value = 35),
-            h4("Winningest Picks, Week 2"),
-           p("Updated 9/17/16 8:40a PDT"),
+            h4("Winningest Picks, Week 4"),
+           p("Final update 10/01/15 8:05a PDT"),
            htmlOutput(outputId="mostWins")
            ,
                         tags$head(tags$style(type="text/css",
